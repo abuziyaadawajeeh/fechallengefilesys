@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: hsl(229, 57%, 11%);
+  height: 100vh;
+  background-image: url("./images/bg-desktop.png");
+  background-position: 0px 50vh;
+  background-repeat: no-repeat;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one {
+  background-color: hsl(228, 56%, 26%);
+  padding: 2rem;
+  display: block;
+  box-sizing: border-box;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* width: 30%; */
+
+  /* margin-top: 50%;
+  margin-bottom: auto; */
+  border-top-right-radius: 3rem;
+  margin-right: 2rem;
+}
+.one > * {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 0.5rem;
+  height: 1.5rem;
+}
+.two {
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: hsl(228, 56%, 26%);
+  line-height: 3rem;
+  color: rgb(206, 206, 206);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.bar {
+  height: 1rem;
+  box-sizing: border-box;
+
+  background-color: hsl(229, 57%, 11%);
+  border: 1px solid hsl(229, 57%, 11%);
+  border-radius: 0.5rem;
+}
+.inbar {
+  height: 95%;
+  width: 70%;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 0.5rem;
+}
+
+#logo {
+  background-color: initial;
+  height: initial;
+  width: initial;
+}
