@@ -7,7 +7,6 @@ body {
   background-image: url("./images/bg-desktop.png");
   background-position: 0px 50vh;
   background-repeat: no-repeat;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,12 +81,18 @@ body {
   width: initial;
 }
 @media screen and (max-width: 375px) {
+  body > * {
+    margin: 0rem 0rem 2rem;
+    transform: scale(0.8, 0.8);
+  }
+  .one {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
   body {
     background-image: url("images/bg-mobile.png");
     background-position: initial;
     flex-direction: column;
-  }
-  body > * {
-    margin: 2rem 0;
+    justify-content: center;
   }
 }
