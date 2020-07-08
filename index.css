@@ -1,15 +1,17 @@
 * {
   margin: 0;
 }
-body {
+.wrapper {
   background-color: hsl(229, 57%, 11%);
   height: 100vh;
   background-image: url("./images/bg-desktop.png");
   background-position: 0px 50vh;
   background-repeat: no-repeat;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
 .one {
@@ -24,7 +26,8 @@ body {
   /* margin-top: 50%;
   margin-bottom: auto; */
   border-top-right-radius: 3rem;
-  margin-right: 2rem;
+  margin: 0 2rem;
+  margin-bottom: 1rem;
 }
 .one > * {
   margin-top: 1rem;
@@ -80,19 +83,34 @@ body {
   height: initial;
   width: initial;
 }
-@media screen and (max-width: 375px) {
-  body > * {
+@media screen and (max-width: 570px) {
+  .wrapper > * {
     margin: 0rem 0rem 2rem;
     transform: scale(0.8, 0.8);
   }
-  .one {
+  /* .one {
     margin-right: 0rem;
     margin-left: 0rem;
-  }
-  body {
+  } */
+  .wrapper {
     background-image: url("images/bg-mobile.png");
+    background-repeat: repeat;
     background-position: initial;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
   }
+}
+.attribution {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: rgb(161, 161, 161);
+}
+.attribution > div {
+  padding: 0.5rem;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: red;
 }
